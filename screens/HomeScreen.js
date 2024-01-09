@@ -18,6 +18,7 @@ import { useNavigation } from "@react-navigation/native";
 import { MagnifyingGlassIcon } from "react-native-heroicons/outline";
 import Categories from "../components/Categories";
 import SortCategories from "../components/SortCategories";
+import Destinations from "../components/Destinations";
 
 export default function HomeScreen() {
   const navigation = useNavigation();
@@ -55,6 +56,9 @@ export default function HomeScreen() {
         {/* sort categories for the destination */}
         <View style={tw`mb-4`}>
           <SortCategories />
+        </View>
+        <View>
+          <Destinations />
         </View>
       </ScrollView>
     </SafeAreaView>
